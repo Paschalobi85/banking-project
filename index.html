@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Site</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+
+        <div class="logo-container">
+            <h1 id="bank-logo">World Bank International</h1>
+        </div>
+
+        <div class="nav-links">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#accounts">Accounts</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-buttons">
+            <button id="login-btn">Login</button>
+            <button id="open-account-btn">Open Account</button>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-subtitle">YOUR TRUSTED FINANCIAL PARTNER</p>
+
+        <h2 id="hero-title">Banking Without Borders</h2>
+
+        <p class="hero-text">
+            Secure, simple and reliable banking solutions
+            designed for your financial future.
+        </p>
+
+        <div class="hero-buttons">
+            <button id="get-started-btn">Get Started</button>
+            <button id="learn-more-btn">Learn More</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="account-section" id="accounts">
+
+    <div class="account-header">
+        <p class="section-label">MY ACCOUNT</p>
+        <h2>Account Overview</h2>
+    </div>
+
+    <div class="account-card">
+
+        <div class="account-card-top">
+            <div>
+                <p>Available Balance</p>
+                <h3 id="account-balance">₦250,000.00</h3>
+            </div>
+
+            <button id="balance-btn">Hide Balance</button>
+        </div>
+
+        <div class="account-details">
+            <div>
+                <p>Account Holder</p>
+                <span id="account-holder">Obi Paschal</span>
+            </div>
+
+            <div>
+                <p>Account Number</p>
+                <span id="account-number">**** **** 4582</span>
+            </div>
+
+            <div>
+                <p>Account Type</p>
+                <span id="account-type">Current Account</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="quick-actions">
+
+        <button id="transfer-btn">
+            Transfer Money
+        </button>
+
+        <button id="deposit-btn">
+            Deposit
+        </button>
+
+        <button id="transactions-btn">
+            Transactions
+        </button>
+
+        <button id="pay-bills-btn">Pay Bills</button>
+
+    </div>
+
+</section>
+
+<section class="transactions-section">
+
+    <div class="section-heading">
+        <p class="section-label">ACCOUNT ACTIVITY</p>
+        <h2>Recent Transactions</h2>
+    </div>
+
+    <div class="transactions-list">
+
+        <div class="transaction">
+            <div class="transaction-info">
+                <h3>Salary Deposit</h3>
+                <p>September 10, 2026</p>
+            </div>
+
+            <span class="transaction-amount income">
+                +₦250,000.00
+            </span>
+        </div>
+
+        <div class="transaction">
+            <div class="transaction-info">
+                <h3>Electricity Bill</h3>
+                <p>September 9, 2026</p>
+            </div>
+
+            <span class="transaction-amount expense">
+                -₦15,000.00
+            </span>
+        </div>
+
+        <div class="transaction">
+            <div class="transaction-info">
+                <h3>Airtime Purchase</h3>
+                <p>September 8, 2026</p>
+            </div>
+
+            <span class="transaction-amount expense">
+                -₦5,000.00
+            </span>
+        </div>
+
+        <div class="transaction">
+            <div class="transaction-info">
+                <h3>Transfer Received</h3>
+                <p>September 7, 2026</p>
+            </div>
+
+            <span class="transaction-amount income">
+                +₦50,000.00
+            </span>
+        </div>
+
+    </div>
+
+    <button id="view-transactions-btn">
+        View All Transactions
+    </button>
+
+</section>
+
+<section class="services-section" id="services">
+
+    <div class="section-heading">
+        <p class="section-label">WHAT WE OFFER</p>
+        <h2>Our Banking Services</h2>
+        <p>
+            Everything you need to manage your money
+            securely and conveniently.
+        </p>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Money Transfer</h3>
+            <p>
+                Send and receive money quickly and securely.
+            </p>
+            <button class="service-btn">Learn More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Debit & Credit Cards</h3>
+            <p>
+                Access your money easily with our secure cards.
+            </p>
+            <button class="service-btn">Learn More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Savings</h3>
+            <p>
+                Build your future with flexible savings solutions.
+            </p>
+            <button class="service-btn">Learn More</button>
+        </div>
+
+        <div class="service-card">
+            <h3>International Banking</h3>
+            <p>
+                Manage your finances across borders with ease.
+            </p>
+            <button class="service-btn">Learn More</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT US SECTION -->
+<section class="about-section" id="about">
+
+    <div class="section-heading">
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Banking You Can Trust</h2>
+
+        <p>
+            World Bank International provides secure, simple and
+            reliable banking solutions designed to help you manage
+            your money with confidence.
+        </p>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+            <h3>Secure Banking</h3>
+            <p>
+                Your financial information is protected with
+                modern security practices.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Easy Access</h3>
+            <p>
+                Manage your money quickly and conveniently
+                wherever you are.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Global Services</h3>
+            <p>
+                Access banking solutions designed for
+                local and international needs.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OPEN ACCOUNT MODAL -->
+<div id="account-modal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="close-account-modal" class="close-modal">
+            &times;
+        </button>
+
+        <h2>Open an Account</h2>
+
+        <p>Enter your details to open a new account.</p>
+
+        <input
+            type="text"
+            id="new-account-name"
+            placeholder="Full Name"
+        >
+
+        <input
+            type="email"
+            id="new-account-email"
+            placeholder="Email Address"
+        >
+
+        <select id="new-account-type">
+            <option value="">Select Account Type</option>
+            <option value="Savings Account">Savings Account</option>
+            <option value="Current Account">Current Account</option>
+        </select>
+
+        <div class="modal-buttons">
+
+            <button id="cancel-account">
+                Cancel
+            </button>
+
+            <button id="confirm-account">
+                Open Account
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="close-login-modal" class="close-modal">
+            &times;
+        </button>
+
+        <h2>Login</h2>
+
+        <p>Enter your account details to continue.</p>
+
+        <input
+            type="email"
+            id="login-email"
+            placeholder="Email Address"
+        >
+
+        <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+        >
+
+        <div class="modal-buttons">
+
+            <button id="cancel-login">
+                Cancel
+            </button>
+
+            <button id="confirm-login">
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ABOUT US -->
+<section class="about-section" id="about">
+
+    <div class="section-heading">
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Banking With Confidence</h2>
+
+        <p>
+            World Bank International provides secure,
+            simple and reliable banking solutions designed
+            to help you manage your finances with confidence.
+        </p>
+    </div>
+
+</section>
+
+<footer class="footer" id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>World Bank International</h2>
+            <p>
+                Secure banking solutions for a connected world.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Accounts</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Support</h3>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Security</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@worldbankinternational.mailer</p>
+            <p>Phone: +234 7061 9690 60</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 World Bank International. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<div id="transfer-modal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="close-transfer-modal" class="close-modal">&times;</button>
+
+        <h2>Transfer Money</h2>
+
+        <p>Enter the amount you want to transfer.</p>
+
+        <input
+            type="number"
+            id="transfer-amount"
+            placeholder="Enter amount"
+            min="1"
+        >
+
+        <div class="modal-buttons">
+            <button id="cancel-transfer">Cancel</button>
+            <button id="confirm-transfer">Transfer</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/script.js"></script>
+
+  
+</body>
+</html>
