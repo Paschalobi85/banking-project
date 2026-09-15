@@ -10,9 +10,7 @@ const balanceBtn = document.getElementById("balance-btn");
 
 
 
-// ===============================
-// SHOW / HIDE BALANCE
-// ===============================
+// SHOW AND HIDE BALANCE
 
 balanceBtn.addEventListener("click", function () {
 
@@ -36,9 +34,7 @@ balanceBtn.addEventListener("click", function () {
 });
 
 
-// ===============================
-// BUTTONS
-// ===============================
+//BUTTONS
 
 const transferBtn = document.getElementById("transfer-btn");
 const depositBtn = document.getElementById("deposit-btn");
@@ -46,10 +42,7 @@ const transactionsBtn = document.getElementById("transactions-btn");
 
 const transactionsList = document.querySelector(".transactions-list");
 
-
-// ===============================
-// UPDATE BALANCE ON SCREEN
-// ===============================
+//UPDATE BALANCE ON SCREEN
 
 function updateBalance() {
 
@@ -71,9 +64,7 @@ function updateBalance() {
 
 updateBalance();
 
-// ===============================
-// ADD TRANSACTION
-// ===============================
+//ADD TRANSACTION
 
 function addTransaction(name, amount, type) {
 
@@ -108,9 +99,7 @@ function addTransaction(name, amount, type) {
 }
 
 
-// ===============================
-// TRANSFER MONEY
-// ===============================
+//TRANSFER MONEY
 
 const transferModal = document.getElementById("transfer-modal");
 const transferAmount = document.getElementById("transfer-amount");
@@ -177,10 +166,7 @@ confirmTransfer.addEventListener("click", function () {
 
 
 
-
-// ===============================
-// TRANSACTIONS BUTTON
-// ===============================
+//TRANSACTION BUTTON
 
 transactionsBtn.addEventListener("click", function () {
 
@@ -190,9 +176,7 @@ transactionsBtn.addEventListener("click", function () {
 
 });
 
-// ===============================
-// PAY BILLS
-// ===============================
+//PAY BILLS
 
 const payBillsBtn = document.getElementById("pay-bills-btn");
 
@@ -220,31 +204,48 @@ payBillsBtn.addEventListener("click", function () {
 
 });
 
-// ===============================
-// VIEW ALL TRANSACTIONS
-// ===============================
+// DEPOSIT MONEY
+
+depositBtn.addEventListener("click", function () {
+
+    const amount = Number(prompt("Enter deposit amount:"));
+
+    if (isNaN(amount) || amount <= 0) {
+        alert("Please enter a valid amount.");
+        return;
+    }
+
+    accountBalance += amount;
+
+    updateBalance();
+
+    addTransaction("Money Deposit", amount, "income");
+
+    alert(`₦${amount.toLocaleString("en-NG")} deposited successfully!`);
+
+});
+
+//VIEW ALL TRANSACTIONS
 
 const viewTransactionsBtn = document.getElementById("view-transactions-btn");
 
 viewTransactionsBtn.addEventListener("click", function () {
 
-    transactionsList.classList.toggle("show-all");
+    if (transactionsList.style.display === "none") {
 
-    if (transactionsList.classList.contains("show-all")) {
-
+        transactionsList.style.display = "block";
         viewTransactionsBtn.textContent = "Hide Transactions";
 
     } else {
 
+        transactionsList.style.display = "none";
         viewTransactionsBtn.textContent = "View All Transactions";
 
     }
 
 });
 
-/// ===============================
-// OPEN ACCOUNT
-// ===============================
+//OPEN ACCOUNT
 
 const openAccountBtn = document.getElementById("open-account-btn");
 
@@ -262,7 +263,7 @@ const accountHolder = document.getElementById("account-holder");
 const accountTypeDisplay = document.getElementById("account-type");
 
 
-// OPEN THE FORM
+//OPEN THE FORM
 
 openAccountBtn.addEventListener("click", function () {
 
@@ -271,7 +272,7 @@ openAccountBtn.addEventListener("click", function () {
 });
 
 
-// CLOSE WITH X
+//CLOSE WITH X
 
 closeAccountModal.addEventListener("click", function () {
 
@@ -280,7 +281,7 @@ closeAccountModal.addEventListener("click", function () {
 });
 
 
-// CLOSE WITH CANCEL
+//CLOSE WITH CANCEL
 
 cancelAccount.addEventListener("click", function () {
 
@@ -318,9 +319,7 @@ confirmAccount.addEventListener("click", function () {
 
 });
 
-// ===============================
-// LOGIN
-// ===============================
+//LOGIN
 
 const loginBtn = document.getElementById("login-btn");
 

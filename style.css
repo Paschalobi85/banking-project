@@ -525,9 +525,16 @@ body {
     }
 
 }
-/* ===============================
-   ABOUT US
-================================ */
+
+.transactions-list .transaction:nth-child(n + 4) {
+    display: none;
+}
+
+.transactions-list.show-all .transaction {
+    display: flex;
+}
+
+/*  ABOUT US */
 
 .about-section {
     padding: 80px 8%;
